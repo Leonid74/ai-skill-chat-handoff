@@ -1,6 +1,6 @@
 ---
 name: chat-handoff
-version: 1.2.0
+version: 1.2.1
 description: "Invoke when the user signals they are ending THIS session to continue in a NEW chat with preserved context. This is session migration, not content summarization — the user needs a copy-paste block for their next chat's opening message.\n\nInvoke for: 'handoff', 'хэндоф', 'перенос в новый чат', 'выжимка для нового диалога', 'контекст для нового чата', chat-too-long-to-continue, or any combination of summarizing + intent to open a new session elsewhere. Also trigger for: 'суммаризируй чат', 'суммаризируй диалог', 'выжимка диалога', 'chat-handoff', 'продолжим в новом чате', 'перенос в новый чат'.\n\nSkip for: summarizing code/PRs/videos/documents in this session, writing client-facing summaries, saving to memory without new-chat intent, or when the user wants to continue HERE rather than move to a new chat."
 ---
 
