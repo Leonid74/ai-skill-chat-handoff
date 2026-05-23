@@ -1,7 +1,7 @@
 ---
 name: chat-handoff
-version: 1.1.0
-description: Use when the user asks to summarize the current chat, hand off context to a new chat, wrap up a session, or says phrases like "суммаризируй чат", "суммаризируй диалог", "передай контекст в новый чат", "сделай хэндоф", "выжимка диалога", "handoff", "chat-handoff", "контекст для нового чата", "продолжим в новом чате", "перенос в новый чат". Always trigger when the user is clearly closing one chat to open another with the same context. Produces a single copy-paste markdown block that gives a fresh Claude session full working context — adaptive to research, project, creative, or decision-type chats.
+version: 1.2.0
+description: "Invoke when the user signals they are ending THIS session to continue in a NEW chat with preserved context. This is session migration, not content summarization — the user needs a copy-paste block for their next chat's opening message.\n\nInvoke for: 'handoff', 'хэндоф', 'перенос в новый чат', 'выжимка для нового диалога', 'контекст для нового чата', chat-too-long-to-continue, or any combination of summarizing + intent to open a new session elsewhere. Also trigger for: 'суммаризируй чат', 'суммаризируй диалог', 'выжимка диалога', 'chat-handoff', 'продолжим в новом чате', 'перенос в новый чат'.\n\nSkip for: summarizing code/PRs/videos/documents in this session, writing client-facing summaries, saving to memory without new-chat intent, or when the user wants to continue HERE rather than move to a new chat."
 ---
 
 # Chat Handoff — выжимка диалога для передачи в новый чат
